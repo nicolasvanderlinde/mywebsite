@@ -1,0 +1,122 @@
+
+<html>
+ <head>
+ <style>
+.top {
+  position: fixed;
+  width: 100%;
+  z-index: 1
+}
+.top {
+  top: 0
+}
+.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+   }
+.topmenu {
+   float: left;
+   display: block;
+   color: white;
+   text-align: center;
+   padding: 14px 16px;
+   text-decoration: none;
+   }
+a:hover:not(.active) {
+   background-color: grey;
+   }
+.third{float:left; width: 33.33333%;}
+img {width: 60%}
+.padding-32{padding-top:32px!important;padding-bottom:32px!important}
+.row:after{content: ""; display: table; clear: both}
+.container01 {
+   display: -webkit-flex;
+   display: flex;
+   -webkit-flex-direction: row;
+   flex-direction: row;
+}
+.flex-item01 {
+width: 33%;
+border: 1px solid green;
+}
+ </style>
+  <meta charset= "utf-8">
+  <title>class03</title>
+  <meta name= "viewport" content= "width= device-width, initial-scale= 1.0">
+  <link href= "class03.css" type= "text/css" rel= "stylesheet">
+ </head>
+ <body>
+  <div>
+  <!-- Horizontal menu on top of the web page -->
+   <div class= "top">
+    <ul class= "navbar">
+     <li><a class= "topmenu" href="#home">Home</a></li>
+     <li><a class= "topmenu" href="#school">Games</a></li>
+     <li><a class= "topmenu" href="#music">Music</a></li>
+     <li><a class= "topmenu" href="#about">About Me</a></li>
+    </ul>
+   </div>
+   <center> 
+    <div style= "background-color: red; top: 40px; position: relative" id= "school">
+    <!-- Main title and main picture -->
+     <h1>Nicks Video Games</h1>
+     <p>Games Nick Grew Up On</p>
+     <img src= https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2g_qRAkzCjg2YRLWBvdNrabrqUwwS-H8IxPYYgPlufMPCOxUVOg />
+    </div>
+    <div class= "row padding-32" style= "background-color: lightyellow" id= "about">
+    <!-- Itemization of activities -->
+     <h1>Video Games I Quite Enjoyed</h1>
+     <pre>Games That Helped Me Escape From My Everday Troubles (pictures=links to wiki pages)
+     </pre>
+    <div class= "third">
+     <p>Legend Of Zelda Majoras Mask</p>
+     <a href= "https://en.wikipedia.org/wiki/The_Legend_of_Zelda:_Majora's_Mask">
+     <img src= https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTm6cE_M-olzaQ1gYvHA8zjkeXgkiDOzS0Bs7BUWGY1N5I4Ljysag></a>
+     <p>This is the first game I fell in love with.I never beat it though because I was like 5-7 and didnt understand the game all that well. I played it everyday all day untill my N64 broke.
+     </p>
+    </div>
+    <div class= "third">
+     <p>Dark Cloud</p>
+     <a href= https://en.wikipedia.org/wiki/Dark_Cloud>
+     <img src= https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmkX3BuV1NVs8Ndqixy7FVSRZPZiq6oC2xY_oq9fOd94HxPqwS></a>
+     <p>This game was one of the first games I got for PS2. It  was challenging and had very entertaining content. I never beat the game untill I repurchased a PS2 when I was in High School and even then I had to google the last boss. 
+     </p>
+    </div>
+    <div class= "third">
+     <p>Skyrim</p>
+     <a href= "https://en.wikipedia.org/wiki/The_Elder_Scrolls_V:_Skyrim">
+     <img src= data:image/jpeg;base64,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 class=></a>
+     <p>Skyrim was a more recent one and it completly surprised me. I had played games similar to it and they blowed, I ended up renting it from redbox and never returned it. I played it over and over untill I hated it, gave it a break and then got hooked in again. For a game to have me interested from its release in 2011 till 2016 is impressive to me. Bethesda does amazing work, pretty glitchy games but very good story, graphics, and character developing.
+     </p>
+    </div>
+   </center>
+  </div>
+  <div class= "container01" id= "music">
+  <!-- Menu list -->
+    <div class= "flex-item01">Info About The Legend Of Zelda Majoras Mask
+      <ul>
+        <li>Released in North America in October of 2000</li>
+        <li>3.36 million copies sold worldwide</li>
+        <li>Game Platforms inculde Nintendo 64, Gamecube, and an enhanced version on the N3DS</li>
+      </ul>
+    </div>
+    <div class= "flex-item01">Info About Dark Cloud
+      <ul>
+        <li>Released in North America in May 2001</li>
+        <li>800,000 units sold worldwide</li>
+        <li> Game Platform PS2 Only</li>
+      </ul>
+    </div>
+    <div class= "flex-item01">Info About Skyrim
+      <ul>
+        <li>Released worldwide in November 11, 2011</li>
+        <li>30 million copies sold since its release in 2011</li>
+        <li>Game Platforms include Microsoft Windows, Playstaion 3 & 4, Xbox 360 & One, and Nintendo Switch</li>
+      </ul>
+    </div>
+  </div>
+ </body>
+</html>
